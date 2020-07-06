@@ -1,0 +1,159 @@
+body{
+	font-family:Georgia,"Times New Roman",sans-serif;
+	margin:0;
+	background-color:#fce3ec;
+	height:auto;
+	}
+
+h1{
+	font-weight:400;
+	font-size: 40px;
+	text-transform:uppercase;
+	margin:0;
+	}
+
+h2{
+	font-weight:400;
+	font-size:20px;
+	text-transform:capitalize;
+	margin:2;
+	}
+
+	/*for all images below*/
+img{
+	display:block;
+	width:99%;
+	height:99vh;
+	}
+
+main{
+	max-width:80%;
+	margin:auto;
+	box-shadow:35px 0px 40px rgba(0 0 0 0.9);
+	box-shadow: 4px 2px 4px 4px rgba(0,0,0,0.5);
+	}
+
+
+#landing{
+	background-color:#f0fcfb;
+	color:#f71969;
+	height:100vh
+	}
+
+#landing-text{
+	display:grid;
+	grid-template-columns: 2fr 3fr;
+	/*height:35vh;*/ /*no need*/
+	justify-content:center;
+	align-items:center;
+	text-align:center;
+	}	 
+
+#landing-text-inner{
+	padding-left:10px;
+	padding-right: 10px;
+}	
+
+#landing-text h2{
+	color:#0a0efc;
+	}
+
+#landing-img{
+	background-position:center;
+	background-size:cover;
+	background-repeat:no-repeat;	
+	}
+
+
+.btn{
+	padding:10px;
+	border:2px #ccc solid;
+	border-radius:50px;
+	display:inline-block;
+	margin:10px;
+	text-decoration:none;
+	color:purple;
+	transition:background 500ms ease;
+	}
+
+.btn:hover{
+	background-color:#eee;
+	color:red;
+	}
+ 
+#header{
+	padding:20px;
+	background-color:grey;
+	color:#fff;
+	margin-top:2px;
+	margin-bottom:2px;
+	}
+#header h2{
+	font-size:30px;
+	text-align:center;
+	}
+	
+.caption{
+	text-align:center;
+	padding:5px;
+	font-size:18px;
+	color:#095e0f;
+	}
+
+footer{
+	text-align:center;
+	padding:20px;
+	background-color:rgb(231, 188, 188);
+	color:blue;
+	}
+
+/*screen size 600px and up*/
+@media(min-width:760px){
+	#landing{
+		height:100%;
+	}             /*NOT WORKING*/
+		
+	#landing-text{
+		display:grid;
+		grid-template-columns: 2fr 3fr;
+		height:100vh;
+		}
+		
+
+	#landing-img{
+		height:100vh;
+		}
+	}
+
+
+
+
+	@media(max-width:600px){
+		#landing{
+			height:50vh;
+		}		
+
+		#landing-text-inner{
+			padding-top: 70px;
+			margin-left: 25px;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+		}
+		
+		img{
+			height:55vh;
+		}
+
+		#landing-img{
+			display:none;
+		}		
+	}
+	
+
+
+
+ 
+
+	
+	
